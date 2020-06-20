@@ -138,5 +138,12 @@
     "code": ":card_index_dividers:",
     "color": "yellow",
     "text": "Add/Update json."
+  },
+  {
+    "id": 21,
+    "emoji": "💚",
+    "code": ":green_heart:",
+    "color": "green",
+    "text": "Fix pipeline."
   }
 ]
