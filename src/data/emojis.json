@@ -145,5 +145,12 @@
     "code": ":green_heart:",
     "color": "green",
     "text": "Fix pipeline."
+  },
+  {
+    "id": 22,
+    "emoji": "📱",
+    "code": ":iphone:",
+    "color": "teal",
+    "text": "Update {x} responsiveness."
   }
 ]
