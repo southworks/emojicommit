@@ -10,7 +10,7 @@ const Footer = (props: HeaderProps): JSX.Element => {
 
   return (
     <footer className={`bg-${secColor}-500 py-4 px-20 `}>
-      <h2 className='flex mr-auto text-xl font-bold'>
+      <h2 className='flex flex-wrap mr-auto text-xl font-bold'>
         You can suggest changes or new emojis in{' '}
         <a
           className={`px-2 text-${primColor}-700`}
