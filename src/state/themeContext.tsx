@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { colorComplement } from './utils/color-list';
+import { colorComplement } from '../utils/color-list';
 
 interface ThemeColors {
   primaryColor: string;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { transitionSec } from '../../utils/styles';
-import { useThemeColor } from '../../themeContext';
+import { useThemeColor } from '../../state/themeContext';
 
 const Footer = (): JSX.Element => {
   const { themeColors } = useThemeColor();

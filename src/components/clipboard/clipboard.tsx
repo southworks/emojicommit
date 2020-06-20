@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useThemeColor } from '../../themeContext';
+import { useThemeColor } from '../../state/themeContext';
 
 interface ClipboardProps {
   name: string;

@@ -6,7 +6,7 @@ import { colors, random } from '../utils/color-list';
 import EmojiList from '../components/emoji-list/emoji-list';
 import Filter from '../components/filter/filter';
 import { transitionSec } from '../utils/styles';
-import { useThemeColor, ActionTypes } from '../themeContext';
+import { useThemeColor, ActionTypes } from '../state/themeContext';
 
 const Home = (): JSX.Element => {
   const [stringCopied, setStringCopied] = useState('');

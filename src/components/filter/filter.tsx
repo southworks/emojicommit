@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { transitionSec } from '../../utils/styles';
-import { useThemeColor } from '../../themeContext';
+import { useThemeColor } from '../../state/themeContext';
 
 const Filter = (): JSX.Element => {
   const [filterValue, setFilterValue] = useState('');

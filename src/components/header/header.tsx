@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import emojis from '../../data/emojis.json';
 import { transitionSec } from '../../utils/styles';
-import { useThemeColor } from '../../themeContext';
+import { useThemeColor } from '../../state/themeContext';
 
 const emojiList = emojis.map(emoji => emoji.emoji);
 
