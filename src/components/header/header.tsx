@@ -1,24 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import emojis from '../../data/emojis.json';
 
-const emojis = [
-  `⚡️`,
-  `⚡️`,
-  `🔥`,
-  `🐛`,
-  `🚑`,
-  `✨`,
-  `📝`,
-  `🚀`,
-  `💄`,
-  `🎉`,
-  `✅`,
-  `🔒`,
-  `🍎`,
-  `🐧`,
-  `🏁`,
-  `🤖`,
-  `🍏`,
-];
+const emojiList = emojis.map(emoji => emoji.emoji);
 
 interface HeaderProps {
   primColor: string;
@@ -32,8 +15,8 @@ const Header = (props: HeaderProps): JSX.Element => {
   useEffect(() => {
     const interval = setInterval(() => {
       const rand = Math.floor(Math.random() * 10);
-      setEmoji(emojis[rand]);
-    }, 800);
+      setEmoji(emojiList[rand]);
+    }, 1000);
 
     return () => {
       clearInterval(interval);
@@ -46,11 +29,16 @@ const Header = (props: HeaderProps): JSX.Element => {
       <span className='text-6xl' role='img' aria-label='emoji'>
         {emoji}
       </span>
-      <h2 className='text-3xl font-bold'>Emojis for your commit messages</h2>
-      <button
-        className={`mt-6 bg-${secColor}-500 hover:bg-${secColor}-light text-white font-bold py-2 px-4 hover:border-${secColor}-500 border-b-4 border-${secColor}-700 border-${secColor}-500 rounded focus:outline-none`}>
+      <h2 className='mb-6 text-3xl font-bold'>
+        Emojis for your commit messages
+      </h2>
+      <a
+        href='https://github.com/southworks/emojicommit'
+        target='_blank'
+        rel='noreferrer'
+        className={`bg-${secColor}-500 hover:bg-${secColor}-light text-white font-bold py-2 px-4 hover:border-${secColor}-500 border-b-4 border-${secColor}-700 border-${secColor}-500 rounded focus:outline-none`}>
         {`🎩 GitHub`}
-      </button>
+      </a>
     </header>
   );
 };

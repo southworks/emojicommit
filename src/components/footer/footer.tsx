@@ -14,8 +14,9 @@ const Footer = (props: HeaderProps): JSX.Element => {
         You can suggest changes or new emojis in{' '}
         <a
           className={`px-2 text-${primColor}-700`}
-          href='google.com'
-          target='_blank'>
+          href='https://github.com/southworks/emojicommit'
+          target='_blank'
+          rel='noreferrer'>
           GitHub
         </a>
         by creating an issue or pull request.
