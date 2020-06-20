@@ -35,7 +35,7 @@ const Header = (props: HeaderProps): JSX.Element => {
       <a
         href='https://github.com/southworks/emojicommit'
         target='_blank'
-        rel='noreferrer'
+        rel='noopener noreferrer'
         className={`bg-${secColor}-500 hover:bg-${secColor}-light text-white font-bold py-2 px-4 hover:border-${secColor}-500 border-b-4 border-${secColor}-700 border-${secColor}-500 rounded focus:outline-none`}>
         {`🎩 GitHub`}
       </a>

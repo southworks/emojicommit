@@ -16,7 +16,7 @@ const Footer = (props: HeaderProps): JSX.Element => {
           className={`px-2 text-${primColor}-700`}
           href='https://github.com/southworks/emojicommit'
           target='_blank'
-          rel='noreferrer'>
+          rel='noopener noreferrer'>
           GitHub
         </a>
         by creating an issue or pull request.
