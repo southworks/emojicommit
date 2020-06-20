@@ -1,25 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
 import Clipboard from '../components/clipboard/clipboard';
-import { colors } from '../utils/color-list';
+import { colors, random } from '../utils/color-list';
 import EmojiList from '../components/emoji-list/emoji-list';
 import Filter from '../components/filter/filter';
 import { transitionSec } from '../utils/styles';
+import { useThemeColor, ActionTypes } from '../themeContext';
 
 const Home = (): JSX.Element => {
   const [stringCopied, setStringCopied] = useState('');
-  const randColorIndex = Math.floor(Math.random() * 10) % 9;
-  const primColor = colors[randColorIndex];
-  const secColor = colors[(randColorIndex + 2) % 9];
+  const { themeColors, setThemeColor } = useThemeColor();
+  const { primaryColor } = themeColors;
+
+  useEffect(() => {
+    const randColorIndex = Math.floor(random() * 10) % 9;
+    setThemeColor({
+      type: ActionTypes.SetTheme,
+      value: colors[randColorIndex],
+    });
+  }, [stringCopied, setThemeColor]);
 
   return (
-    <div className={`${transitionSec} bg-${primColor}-100`}>
-      <Clipboard color={secColor} name={stringCopied} />
-      <Header {...{ primColor, secColor }} />
-      <Filter color={secColor} />
+    <div className={`${transitionSec} bg-${primaryColor}-100`}>
+      <Clipboard name={stringCopied} />
+      <Header />
+      <Filter />
       <EmojiList copyString={setStringCopied} />
-      <Footer primColor={primColor} secColor={secColor} />
+      <Footer />
     </div>
   );
 };

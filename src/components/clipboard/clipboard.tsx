@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
+import { useThemeColor } from '../../themeContext';
 
 interface ClipboardProps {
-  color: string;
   name: string;
 }
 
 const Clipboard = (props: ClipboardProps): JSX.Element => {
-  const { color, name } = props;
+  const { themeColors } = useThemeColor();
+  const { secondaryColor } = themeColors;
+  const { name } = props;
   const [hideOnTimer, setHideOnTimer] = useState('hidden');
 
   useEffect(() => {
@@ -21,7 +23,7 @@ const Clipboard = (props: ClipboardProps): JSX.Element => {
 
   return (
     <div
-      className={`transition ease-in-out duration-700 flex fixed mt-4 ml-4 justify-center font-bold bg-${color}-500 rounded ${hideOnTimer} z-20`}>
+      className={`transition ease-in-out duration-700 flex fixed mt-4 ml-4 justify-center font-bold bg-${secondaryColor}-500 rounded ${hideOnTimer} z-20`}>
       <div className='p-4'>
         <span>Copied</span>
         <span className='bg-gray-400 rounded px-2 py-1 mx-2'>{name}</span>
