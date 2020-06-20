@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
-import EmojiCard from '../components/emoji-card/emoji-card';
 import Clipboard from '../components/clipboard/clipboard';
 import { colors } from '../utils/color-list';
+import EmojiList from '../components/emoji-list/emoji-list';
 
 const Home = (): JSX.Element => {
   const [stringCopied, setStringCopied] = useState('');
@@ -15,15 +15,7 @@ const Home = (): JSX.Element => {
     <div className={`bg-${primColor}-100`}>
       <Clipboard color={secColor} name={stringCopied} />
       <Header {...{ primColor, secColor }} />
-      <div className='flex flex-wrap max-w-screen-xl justify-center mt-8 mx-auto'>
-        <EmojiCard setStringCopied={setStringCopied} />
-        <EmojiCard setStringCopied={setStringCopied} />
-        <EmojiCard setStringCopied={setStringCopied} />
-        <EmojiCard setStringCopied={setStringCopied} />
-        <EmojiCard setStringCopied={setStringCopied} />
-        <EmojiCard setStringCopied={setStringCopied} />
-        <EmojiCard setStringCopied={setStringCopied} />
-      </div>
+      <EmojiList copyString={setStringCopied} />
       <Footer primColor={primColor} secColor={secColor} />
     </div>
   );

@@ -1,5 +1,17 @@
-@media (min-width: 768px) {
-  .max-w-xxs {
-    max-width: 16rem;
+@media (max-width: 860px) {
+  .cw {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .cw {
+    width: 24rem;
+  }
+}
+
+@media (min-width: 860px) {
+  .cw {
+    width: 16rem;
   }
 }

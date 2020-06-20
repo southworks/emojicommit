@@ -41,7 +41,8 @@ const Header = (props: HeaderProps): JSX.Element => {
   });
 
   return (
-    <header className={`bg-${primColor}-500 py-12 px-20 text-center`}>
+    <header
+      className={`transition duration-500 ease-in-out bg-${primColor}-500 py-12 px-20 text-center`}>
       <span className='text-6xl' role='img' aria-label='emoji'>
         {emoji}
       </span>

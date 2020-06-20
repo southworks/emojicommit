@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "emoji": "🌟",
+    "code": ":star2",
+    "color": "yellow",
+    "text": "Add this new component."
+  },
+  {
+    "id": 2,
+    "emoji": "🎉",
+    "code": ":tada:",
+    "color": "red",
+    "text": "Initial commit."
+  },
+  {
+    "id": 3,
+    "emoji": "🔀",
+    "code": ":twisted_rightwards_arrows:",
+    "color": "teal",
+    "text": "Merge branch with master."
+  },
+  {
+    "id": 4,
+    "emoji": "🔌",
+    "code": ":electric_plug:",
+    "color": "gray",
+    "text": "Add connection to API."
+  },
+  {
+    "id": 5,
+    "emoji": "🌆",
+    "code": ":city_sunset:",
+    "color": "orange",
+    "text": "Modify images/icons/assets in general."
+  },
+  {
+    "id": 6,
+    "emoji": "📑",
+    "code": ":bookmark_tabs:",
+    "color": "purple",
+    "text": "Add/Modify text literals."
+  },
+  {
+    "id": 7,
+    "emoji": "🎠",
+    "code": ":carousel_horse:",
+    "color": "pink",
+    "text": "Add mocks for this."
+  },
+  {
+    "id": 8,
+    "emoji": "⚙️",
+    "code": ":gear:",
+    "color": "gray",
+    "text": "Add/Update configuration file(s)."
+  },
+  {
+    "id": 9,
+    "emoji": "🙏",
+    "code": ":pray:",
+    "color": "blue",
+    "text": "Add/Update/Fix configuration (uncertain)."
+  },
+  {
+    "id": 10,
+    "emoji": "♻️",
+    "code": ":recycle:",
+    "color": "green",
+    "text": "Refactor this because of that."
+  },
+  {
+    "id": 11,
+    "emoji": "🚚",
+    "code": ":truck:",
+    "color": "red",
+    "text": "Move files."
+  },
+  {
+    "id": 12,
+    "emoji": "🚨",
+    "code": ":rotating_light:",
+    "color": "teal",
+    "text": "Remove {x} warnings."
+  },
+  {
+    "id": 13,
+    "emoji": "🚧",
+    "code": ":construction:",
+    "color": "yellow",
+    "text": "WIP: component {x}."
+  },
+  {
+    "id": 14,
+    "emoji": "✅",
+    "code": ":white_check_mark:",
+    "color": "green",
+    "text": "Add/Update test {x}."
+  },
+  {
+    "id": 15,
+    "emoji": "🐛",
+    "code": ":bug:",
+    "color": "green",
+    "text": "Fix bug."
+  },
+  {
+    "id": 16,
+    "emoji": "🔥",
+    "code": ":fire:",
+    "color": "orange",
+    "text": "Remove code."
+  },
+  {
+    "id": 17,
+    "emoji": "🖌️",
+    "code": ":black_nib:",
+    "color": "gray",
+    "text": "Update styling of {x}."
+  },
+  {
+    "id": 18,
+    "emoji": "📝",
+    "code": ":pencil:",
+    "color": "yellow",
+    "text": "Add/Update documentation."
+  },
+  {
+    "id": 19,
+    "emoji": "🛠️",
+    "code": ":hammer_and_wrench:",
+    "color": "indigo",
+    "text": "Update API."
+  },
+  {
+    "id": 20,
+    "emoji": "🗂️",
+    "code": ":card_index_dividers:",
+    "color": "yellow",
+    "text": "Add/Update json."
+  }
+]
