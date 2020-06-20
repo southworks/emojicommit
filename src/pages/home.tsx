@@ -10,6 +10,7 @@ import { useThemeColor, ActionTypes } from '../state/themeContext';
 
 const Home = (): JSX.Element => {
   const [stringCopied, setStringCopied] = useState('');
+  const [filterString, setFilterString] = useState('');
   const { themeColors, setThemeColor } = useThemeColor();
   const { primaryColor } = themeColors;
 
@@ -22,11 +23,13 @@ const Home = (): JSX.Element => {
   }, [stringCopied, setThemeColor]);
 
   return (
-    <div className={`${transitionSec} bg-${primaryColor}-100`}>
+    <div className={`${transitionSec} bg-${primaryColor}-100 min-h-screen`}>
       <Clipboard name={stringCopied} />
       <Header />
-      <Filter />
-      <EmojiList copyString={setStringCopied} />
+      <Filter setFilterString={setFilterString} filterString={filterString} />
+      <div style={{ minHeight: '51.7vh' }}>
+        <EmojiList copyString={setStringCopied} filterString={filterString} />
+      </div>
       <Footer />
     </div>
   );
