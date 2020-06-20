@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import emojis from '../../data/emojis.json';
+import { transitionSec } from '../../utils/styles';
 
 const emojiList = emojis.map(emoji => emoji.emoji);
 
@@ -25,7 +26,7 @@ const Header = (props: HeaderProps): JSX.Element => {
 
   return (
     <header
-      className={`transition duration-500 ease-in-out bg-${primColor}-500 py-12 px-20 text-center`}>
+      className={`${transitionSec} bg-${primColor}-500 py-12 px-20 text-center`}>
       <span className='text-6xl' role='img' aria-label='emoji'>
         {emoji}
       </span>
@@ -36,7 +37,7 @@ const Header = (props: HeaderProps): JSX.Element => {
         href='https://github.com/southworks/emojicommit'
         target='_blank'
         rel='noopener noreferrer'
-        className={`bg-${secColor}-500 hover:bg-${secColor}-light text-white font-bold py-2 px-4 hover:border-${secColor}-500 border-b-4 border-${secColor}-700 border-${secColor}-500 rounded focus:outline-none`}>
+        className={`${transitionSec} bg-${secColor}-500 hover:bg-${secColor}-light text-white font-bold py-2 px-4 hover:border-${secColor}-500 border-b-4 border-${secColor}-700 border-${secColor}-500 rounded focus:outline-none`}>
         {`🎩 GitHub`}
       </a>
     </header>

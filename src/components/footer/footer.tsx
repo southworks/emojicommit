@@ -1,4 +1,5 @@
 import React from 'react';
+import { transitionSec } from '../../utils/styles';
 
 interface HeaderProps {
   primColor: string;
@@ -9,11 +10,11 @@ const Footer = (props: HeaderProps): JSX.Element => {
   const { primColor, secColor } = props;
 
   return (
-    <footer className={`bg-${secColor}-500 py-4 px-20 `}>
+    <footer className={`${transitionSec} bg-${secColor}-500 py-4 px-20 `}>
       <h2 className='flex flex-wrap mr-auto text-xl font-bold'>
         You can suggest changes or new emojis in{' '}
         <a
-          className={`px-2 text-${primColor}-700`}
+          className={`${transitionSec} px-2 text-${primColor}-700`}
           href='https://github.com/southworks/emojicommit'
           target='_blank'
           rel='noopener noreferrer'>
