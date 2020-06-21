@@ -1,11 +1,12 @@
 import React, { useContext } from 'react';
+import { apiTimeout } from '../utils/constants';
 
 interface Timer {
   lastTime: number;
 }
 
 const initialState: Timer = {
-  lastTime: new Date().getTime(),
+  lastTime: new Date().getTime() - (apiTimeout - 5000),
 };
 
 export enum ActionTypes {
