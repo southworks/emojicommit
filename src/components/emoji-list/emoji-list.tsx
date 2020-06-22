@@ -17,11 +17,7 @@ const EmojiList = (props: EmojiListProps): JSX.Element => {
   );
   const [emojiList, setEmojiList] = useState(
     emojis.sort((a, b) =>
-      fullSortOrder.indexOf(a.id) > fullSortOrder.indexOf(b.id) ||
-      fullSortOrder.indexOf(a.id) === -1 ||
-      fullSortOrder.indexOf(b.id) === -1
-        ? 1
-        : -1,
+      fullSortOrder.indexOf(a.id) < fullSortOrder.indexOf(b.id) ? 1 : -1,
     ),
   );
 

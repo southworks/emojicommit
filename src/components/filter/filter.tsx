@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { transitionSec } from '../../utils/styles';
 import { useThemeColor } from '../../state/themeContext';
 
@@ -11,10 +11,6 @@ const Filter = (props: FilterProps): JSX.Element => {
   const { filterString, setFilterString } = props;
   const { themeColors } = useThemeColor();
   const { secondaryColor } = themeColors;
-
-  useEffect(() => {
-    console.log(filterString);
-  }, [filterString]);
 
   return (
     <div className='flex max-w-screen-xl mt-8 justify-center mx-auto'>
