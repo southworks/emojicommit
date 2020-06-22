@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import emojis from '../../data/emojis.json';
 import EmojiCard from '../../components/emoji-card/emoji-card';
 import { EmojiData } from '../../models/emoji-data';
+import sortOrder from '../../data/sortOrder.json';
 
 interface EmojiListProps {
   filterString: string;
@@ -9,8 +10,20 @@ interface EmojiListProps {
 }
 
 const EmojiList = (props: EmojiListProps): JSX.Element => {
-  const [emojiList, setEmojiList] = useState(emojis);
   const { filterString, copyString } = props;
+  const len = emojis.length;
+  const [fullSortOrder] = useState(
+    emojis.map((_, idx) => (!sortOrder[idx] ? len + 1 : sortOrder[idx])),
+  );
+  const [emojiList, setEmojiList] = useState(
+    emojis.sort((a, b) =>
+      fullSortOrder.indexOf(a.id) > fullSortOrder.indexOf(b.id) ||
+      fullSortOrder.indexOf(a.id) === -1 ||
+      fullSortOrder.indexOf(b.id) === -1
+        ? 1
+        : -1,
+    ),
+  );
 
   useEffect(() => {
     setEmojiList(
