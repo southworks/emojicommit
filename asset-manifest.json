@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/emojicommit/static/css/main.3263926d.chunk.css",
+    "main.js": "/emojicommit/static/js/main.64913aff.chunk.js",
+    "main.js.map": "/emojicommit/static/js/main.64913aff.chunk.js.map",
+    "runtime-main.js": "/emojicommit/static/js/runtime-main.ce372aaa.js",
+    "runtime-main.js.map": "/emojicommit/static/js/runtime-main.ce372aaa.js.map",
+    "static/js/2.e1d186f9.chunk.js": "/emojicommit/static/js/2.e1d186f9.chunk.js",
+    "static/js/2.e1d186f9.chunk.js.map": "/emojicommit/static/js/2.e1d186f9.chunk.js.map",
+    "index.html": "/emojicommit/index.html",
+    "precache-manifest.c89577277f871f2698aa24722ab11ed3.js": "/emojicommit/precache-manifest.c89577277f871f2698aa24722ab11ed3.js",
+    "service-worker.js": "/emojicommit/service-worker.js",
+    "static/css/main.3263926d.chunk.css.map": "/emojicommit/static/css/main.3263926d.chunk.css.map",
+    "static/js/2.e1d186f9.chunk.js.LICENSE.txt": "/emojicommit/static/js/2.e1d186f9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ce372aaa.js",
+    "static/js/2.e1d186f9.chunk.js",
+    "static/css/main.3263926d.chunk.css",
+    "static/js/main.64913aff.chunk.js"
+  ]
+}
